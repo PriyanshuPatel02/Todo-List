@@ -6,7 +6,7 @@ Welcome to the todoList repository! This repository contains a simple web applic
 To get started with this project, follow these steps:
 
 1. **Clone the repository:** 
-git clone https://github.com/priyanshupatel02/todoList.git
+git clone https://github.com/priyanshupatel02/Todo-List.git
 
 
 2. **Install dependencies:**
