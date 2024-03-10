@@ -1,0 +1,36 @@
+<%- include("header") -%>
+    <div class="box" id="heading">
+      <h1 style="color:rgb(237, 245, 247)"> <%= listTitle %></h1>
+    </div>
+  
+
+
+  <div class="box">
+  
+      <!-- <li> Write Code</li>
+      <li> Eat well</li>
+      <li> Sleep good</li> -->
+      <!-- yeh loop isliye add kiye hai kyuki back to back jo v add kre woh add hota jaye -->
+    <%  for(let i = 0 ; i < newListItemzz.length; i++) {   %> 
+      <div class="item">
+        <input type="checkbox">
+         <p><%= newListItemzz[i] %></p>
+      </div>
+       
+  
+    <%  } %>
+   <form class="item" action="/" method="post"> 
+    <!-- method which is post the information thats inside
+     my form to my server at the home route("/") -->
+
+     <!-- our form is going to make a post request to the home route("/")
+   line31  & its going to post the value  of or text input which has a name of newItem
+     -->
+      <input type="text" name="newItem" placeholder="New Item Add" autocomplete="off">
+      <button type="submit" name="listname" value="<%=listTitle %>">+</button>
+
+   </form>
+
+  </div>
+
+  <%- include("footer") -%>
